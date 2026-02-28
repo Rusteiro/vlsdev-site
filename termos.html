@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso — VLS Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f0f1a;
+            --bg-card: #12121f;
+            --neon-blue: #00d4ff;
+            --neon-purple: #7b2dff;
+            --neon-cyan: #00ffc8;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --text-dim: #55556a;
+            --border: rgba(255,255,255,0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            padding: 1.2rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(10,10,15,0.85);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            max-width: 900px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.4rem; font-weight: 700;
+            text-decoration: none;
+        }
+        .logo span:first-child { color: var(--neon-blue); }
+        .logo span:nth-child(2) { color: var(--text-dim); }
+        .logo span:last-child { color: var(--text-primary); }
+        .back-link {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 0.9rem; transition: color 0.3s;
+        }
+        .back-link:hover { color: var(--neon-blue); }
+        .content {
+            max-width: 900px; margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        .content h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700; letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+        .content .updated {
+            color: var(--text-dim);
+            font-size: 0.85rem; margin-bottom: 3rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .content h2 {
+            font-size: 1.3rem; font-weight: 600;
+            margin-top: 2.5rem; margin-bottom: 0.8rem;
+            color: var(--neon-blue);
+        }
+        .content p, .content li {
+            color: var(--text-secondary);
+            font-size: 1rem; line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .content ul {
+            padding-left: 1.5rem; margin-bottom: 1rem;
+        }
+        .content li { margin-bottom: 0.4rem; }
+        .content strong { color: var(--text-primary); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 2rem;
+        }
+        .footer-inner {
+            max-width: 900px; margin: 0 auto;
+            text-align: center;
+        }
+        .footer-inner a {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 0.85rem; transition: color 0.3s;
+        }
+        .footer-inner a:hover { color: var(--neon-blue); }
+        .footer-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem; color: var(--text-dim);
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span>&lt;</span><span>VLS</span><span>Dev /&gt;</span>
+            </a>
+            <a href="index.html" class="back-link">← Voltar ao site</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Termos de Uso</h1>
+        <p class="updated">Última atualização: 28/02/2026</p>
+
+        <p>Ao utilizar o site da <strong>VLS Dev</strong> (CNPJ: 63.548.775/0001-16), você concorda com os termos descritos abaixo.</p>
+
+        <h2>1. Serviços</h2>
+        <p>A VLS Dev oferece serviços de desenvolvimento de sites, aplicativos, automações e soluções tecnológicas sob demanda. Cada projeto é tratado individualmente, com escopo, prazo e valores definidos previamente entre as partes.</p>
+
+        <h2>2. Orçamentos</h2>
+        <p>Os orçamentos solicitados pelo site são <strong>gratuitos e sem compromisso</strong>. Os valores apresentados são válidos pelo prazo informado na proposta. A contratação só é formalizada após aprovação mútua das condições.</p>
+
+        <h2>3. Propriedade intelectual</h2>
+        <p>Todo o conteúdo deste site (textos, design, código e imagens) é de propriedade da VLS Dev e protegido pela legislação brasileira de direitos autorais. O código-fonte dos projetos entregues ao cliente passa a ser de propriedade do contratante após a quitação integral do serviço, salvo acordo em contrário.</p>
+
+        <h2>4. Responsabilidades do cliente</h2>
+        <ul>
+            <li>Fornecer informações e materiais necessários para a execução do projeto</li>
+            <li>Cumprir os prazos de feedback e aprovação acordados</li>
+            <li>Realizar os pagamentos conforme condições estabelecidas na proposta</li>
+        </ul>
+
+        <h2>5. Prazos e entregas</h2>
+        <p>Os prazos de entrega são estimados e podem variar conforme a complexidade do projeto e a agilidade no fornecimento de materiais pelo cliente. Atrasos por parte do cliente podem impactar o cronograma.</p>
+
+        <h2>6. Garantia e suporte</h2>
+        <p>A VLS Dev oferece um período de <strong>30 dias de suporte</strong> após a entrega final do projeto para correção de bugs reportados. Alterações de escopo, novas funcionalidades ou melhorias são tratadas como novos serviços.</p>
+
+        <h2>7. Limitação de responsabilidade</h2>
+        <p>A VLS Dev não se responsabiliza por danos indiretos, lucros cessantes ou perda de dados resultantes do uso dos serviços. Nossa responsabilidade total é limitada ao valor pago pelo serviço contratado.</p>
+
+        <h2>8. Cancelamento</h2>
+        <p>O cliente pode cancelar o projeto a qualquer momento. Serão cobradas as etapas já executadas e entregues até a data do cancelamento.</p>
+
+        <h2>9. Foro</h2>
+        <p>Fica eleito o foro da comarca de <strong>São José do Rio Preto - SP</strong> para dirimir quaisquer questões decorrentes destes termos.</p>
+
+        <h2>10. Contato</h2>
+        <p>Dúvidas sobre estes termos podem ser esclarecidas pelo WhatsApp: <strong>(17) 99166-9201</strong>.</p>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <a href="index.html">← Voltar ao site</a>
+            <div class="footer-text">© 2026 VLS Dev — Soluções Tecnológicas</div>
+        </div>
+    </footer>
+</body>
+</html>
