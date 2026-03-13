@@ -493,6 +493,109 @@
             margin-top: 0.3rem;
         }
 
+        /* ===== BRANDS SECTION ===== */
+        .brands {
+            position: relative;
+            z-index: 1;
+            padding: 6rem 2rem;
+        }
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .brand-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .brand-card:hover {
+            border-color: rgba(0,212,255,0.2);
+            transform: translateY(-4px);
+        }
+        .brand-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .brand-card:hover::before { opacity: 1; }
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .brand-logo {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: rgba(123,45,255,0.1);
+            flex-shrink: 0;
+        }
+        .brand-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        .brand-tagline {
+            color: var(--neon-purple);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+        .brand-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .brand-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--neon-blue);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            transition: all 0.3s;
+            margin-top: auto;
+        }
+        .brand-link:hover {
+            color: var(--neon-cyan);
+            transform: translateX(4px);
+        }
+        .brand-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .brand-feature {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            background: rgba(255,255,255,0.04);
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
         /* ===== CTA SECTION ===== */
         .cta {
             position: relative;
@@ -668,6 +771,7 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#marcas">Marcas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato" class="nav-cta">Contato</a></li>
             </ul>
@@ -783,6 +887,35 @@
             <div class="stat-card reveal">
                 <span class="stat-number">100%</span>
                 <span class="stat-label">Clientes satisfeitos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brands" id="marcas">
+        <div class="section-header reveal">
+            <span class="section-tag">// Nossas Marcas</span>
+            <h2>Projetos que criamos e operamos</h2>
+        </div>
+
+        <div class="brands-grid">
+            <div class="brand-card reveal">
+                <div class="brand-header">
+                    <div class="brand-logo">🍫</div>
+                    <div>
+                        <div class="brand-name">Brownies da Bi</div>
+                        <div class="brand-tagline">Confeitaria Gourmet</div>
+                    </div>
+                </div>
+                <p>Confeitaria artesanal especializada em brownies gourmet em São José do Rio Preto. Cardápio digital com pedidos online, pagamento via PIX e cartão, programa de fidelidade e entrega com rastreamento em tempo real.</p>
+                <div class="brand-features">
+                    <span class="brand-feature">Cardápio Digital</span>
+                    <span class="brand-feature">Pedidos Online</span>
+                    <span class="brand-feature">PIX / Cartão</span>
+                    <span class="brand-feature">Fidelidade</span>
+                    <span class="brand-feature">Delivery</span>
+                </div>
+                <a href="https://browniedabi.com.br" class="brand-link" target="_blank">browniedabi.com.br →</a>
             </div>
         </div>
     </section>
